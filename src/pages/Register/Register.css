@@ -1,0 +1,270 @@
+/* Base Layout */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .auth-card {
+    max-width: 360px;
+    padding: 30px 16px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1.2;
+  }
+  
+  /* Image Section */
+  .auth-image {
+    display: none;
+    flex: 0.8;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .auth-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Header */
+  .auth-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .auth-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  
+  .auth-header p {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  /* Error */
+  .auth-error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-bottom: 16px;
+  }
+  
+  /* Form */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .input-group label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 10px 10px 10px 32px;
+    font-size: 0.85rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-field input:focus {
+    border-color: #000;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+    outline: none;
+  }
+  
+  /* Forgot Password */
+  .forgot-password {
+    text-align: right;
+    font-size: 0.75rem;
+  }
+  
+  .forgot-password a {
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button */
+  .auth-button {
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .auth-button:hover {
+    background-color: #333;
+  }
+  
+  .auth-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Footer */
+  .auth-footer {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 14px;
+    color: #666;
+  }
+  
+  .auth-footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .auth-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Login */
+  .social-login {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-login p {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 14px;
+    position: relative;
+  }
+  
+  .social-login p::before,
+  .social-login p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 28%;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .social-login p::before {
+    left: 0;
+  }
+  
+  .social-login p::after {
+    right: 0;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .social-button {
+    padding: 8px;
+    font-size: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .social-button:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .social-button img {
+    width: 14px;
+    height: 14px;
+  }
+  
+  /* Terms */
+  .terms-agreement {
+    font-size: 0.7rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: -6px;
+  }
+  
+  .terms-agreement input {
+    margin: 0;
+  }
+  
+  .terms-agreement a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .terms-agreement a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Layout */
+  @media (min-width: 992px) {
+    .auth-container {
+      flex-direction: row;
+    }
+  
+    .auth-image {
+      display: block;
+    }
+  
+    .auth-card {
+      padding: 40px 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .auth-card {
+      padding: 20px 12px;
+    }
+  
+    .social-buttons {
+      flex-direction: column;
+    }
+  
+    .social-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
