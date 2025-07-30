@@ -1,70 +1,113 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 👕 Clothing Store Fullstack App
 
-## Available Scripts
+This is a complete **MERN stack (MongoDB, Express, React, Node.js)** e-commerce application featuring separate **Admin** and **User** panels. The project includes secure **JWT Authentication**, **email verification**, **product management**, **cart functionality**, and **order placement**.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+### 🔐 Authentication
+- JWT-based authentication
+- Email verification on account creation
+- Login / Signup for users
+- Role-based access (Admin / User)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🛍️ User Panel
+- Browse and view products
+- Add products to cart
+- View cart and checkout
+- Place orders
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🛠️ Admin Panel
+- View all registered users
+- Add, update, and delete products
+- View all orders
 
-### `npm test`
+## 🖼️ Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![App Screenshot](./1.png)
 
-### `npm run build`
+## 🏗️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Frontend:**  
+- React  
+- React Router  
+- Axios  
+- Tailwind CSS / CSS Modules (if used)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Backend:**  
+- Node.js  
+- Express  
+- MongoDB  
+- Mongoose  
+- JSON Web Token (JWT)  
+- Nodemailer (for email verification)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Folder Structure
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+/client         # React Frontend
+/server         # Express Backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+````
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/SaqlainShahid/Clothing-store_fullstack-app_frontend.git
+````
 
-## Learn More
+### 2. Navigate to Folders and Install Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Frontend:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd client
+npm install
+npm start
+```
 
-### Code Splitting
+#### Backend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd server
+npm install
+npm run dev
+```
 
-### Analyzing the Bundle Size
+### 3. Set Up `.env` Files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Backend `.env`
 
-### Making a Progressive Web App
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+EMAIL_USER=your_email@example.com
+EMAIL_PASS=your_email_password
+CLIENT_URL=http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> 🔐 Make sure to replace sensitive values with your actual credentials.
 
-### Advanced Configuration
+## ✅ Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Payment integration (Stripe/PayPal)
+* Product image uploads
+* Admin analytics dashboard
+* Order status tracking
 
-### Deployment
+## 🧑‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Saqlain Shahid**
+[GitHub](https://github.com/SaqlainShahid)
 
-### `npm run build` fails to minify
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+**Enjoy building and customizing this fullstack application!**
+
+
